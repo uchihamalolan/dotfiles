@@ -17,6 +17,7 @@ alias l="exa -al"
 alias dust="du -d 1 -h | sort -h"
 alias zj="zellij"
 vii() { vi -i NONE $1; }
+alias ff="fastfetch"
 
 # plugins
 eval "$(starship init zsh)"
@@ -33,6 +34,9 @@ export ZSH_SYNTAX_HIGHLIGHTERS_DIR=/usr/share/zsh-syntax-highlighting/highlighte
 export PNPM_HOME="/home/malolan/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# golang
+export PATH=$PATH:/usr/local/go/bin
 
 # rust
 source "$HOME/.cargo/env"

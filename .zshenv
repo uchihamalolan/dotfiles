@@ -13,6 +13,4 @@ export SAVEHIST=10000
 
 export MCFLY_KEY_SCHEME=vim
 
-
-
 . "$HOME/.cargo/env"
