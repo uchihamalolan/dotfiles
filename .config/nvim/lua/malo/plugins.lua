@@ -7,8 +7,8 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- core
     use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim' }
-
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
     -- All-in-one Plugin for setting up LSP
@@ -33,23 +33,30 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
-
-    use 'nvim-tree/nvim-web-devicons'
+    
+    -- lsp
+    use { 'jose-elias-alvarez/null-ls.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+    
+    -- themes
     use 'folke/tokyonight.nvim'
     use 'ellisonleao/gruvbox.nvim'
+    
+    -- utils
+    use 'kylechui/nvim-surround'
+	use 'numToStr/Comment.nvim'
+	use 'nvim-tree/nvim-web-devicons'
+    use 'lukas-reineke/indent-blankline.nvim'
+    use 'lewis6991/gitsigns.nvim'
+    use 'akinsho/toggleterm.nvim'
 
-    use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
-
+    -- folke
     use 'folke/which-key.nvim'
     use 'folke/zen-mode.nvim'
     use 'folke/twilight.nvim'
+
+    -- rice
+    use { 'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons' }
+    use { 'nvim-lualine/lualine.nvim', requires = 'nvim-tree/nvim-web-devicons' }
+    use { 'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons' }    
     use { 'folke/trouble.nvim', requires = 'nvim-tree/nvim-web-devicons' }
-
-    use { 'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
-
-    use 'lukas-reineke/indent-blankline.nvim'
-    use 'akinsho/toggleterm.nvim'
-    use { 'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons' }
-
-    use 'lewis6991/gitsigns.nvim'
 end)
