@@ -1,27 +1,40 @@
+local opt = vim.opt
 -- vim.opt.guicursor = ""
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+-- line numbers
+opt.number = true
+opt.relativenumber = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+-- tabs & indentations
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.autoindent = true
+opt.expandtab = true
 
-vim.opt.smartindent = true
-vim.opt.wrap = false
+-- line wrapping
+opt.smartindent = true
+opt.wrap = false
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.updatetime = 300
+-- search settings
+opt.ignorecase = true
+opt.smartcase = true
+opt.hlsearch = false
+opt.incsearch = true
+opt.updatetime = 300
 
-vim.opt.termguicolors = true
-vim.opt.scrolloff = 8
+-- appearence
+opt.termguicolors = true
+opt.scrolloff = 8
+opt.signcolumn = "yes"
+opt.isfname:append("@-@")
 
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+-- backspace
+opt.backspace = 'indent,eol,start'
 
-vim.opt.updatetime = 50
+-- clipboard
+opt.clipboard:append('unnamedplus')
 
+-- split windows
+opt.splitright = true
+opt.splitbelow = true

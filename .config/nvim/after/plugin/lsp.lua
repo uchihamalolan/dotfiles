@@ -9,3 +9,6 @@ lsp.ensure_installed {
 }
 
 lsp.setup()
+
+-- null-ls
+require('null-ls').setup {}

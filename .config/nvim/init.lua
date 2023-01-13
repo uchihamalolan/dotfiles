@@ -4,5 +4,6 @@ vim.g.loaded_netrwPlugin = 1
 
 -- map leader asap
 vim.g.mapleader = " "
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 require('malo')
