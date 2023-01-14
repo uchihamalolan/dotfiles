@@ -1,3 +1,3 @@
 require('malo.set')
-require('malo.remap')
-require('malo.packer')
+require('malo.keymaps')
+require('malo.plugins')

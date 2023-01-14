@@ -1,3 +1,5 @@
+local keymap = vim.keymap
+
 require("nvim-tree").setup {
 	renderer = {
 		icons = {
