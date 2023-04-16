@@ -1,9 +1,2 @@
--- disable netrw at the very start of your init.lua (strongly advised)
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
--- map leader asap
-vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
-require('malo')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
