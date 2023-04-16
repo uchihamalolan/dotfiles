@@ -24,3 +24,6 @@ dtf commit -m "msg"
 dtf push
 ```
 
+**Deleting a file**
+refer: https://www.w3docs.com/snippets/git/how-to-delete-a-file-from-a-git-repository.html
+
