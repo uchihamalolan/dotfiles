@@ -6,21 +6,20 @@
 - zsh config
 - zellij config
 - gitconfig
+
 ---
-### List of cli I have
-- bottom
-- zellij
-- neovim
-- procs
-- fd
-- bat
-- exa
-- ripgrep
-- zsh (auto-suggestions + syntax-highlighting)
-- fastfetch
-- lazygit + lazydocker
----
-### List of Programming Language Specific
-- rust (cargo + rustc)
-- node (pnpm, bun, deno)
-- 
+
+### How I track it ? (git bare repository)
+
+**Alias for Git Bare Repo command**
+```bash
+# bare git (in .zshrc)
+alias dtf="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+```
+
+**Adding/Updating a file**
+```bash
+dtf add FILENAME
+dtf commit -m "msg"
+dtf push
+```
